@@ -15,7 +15,7 @@ import device.common.DecodeResult;
 import device.common.ScanConst;
 import device.sdk.ScanManager;
 
-// import android.widget.Toast;
+import android.widget.Toast;
 
 public class PM80Scanner extends CordovaPlugin {
 
@@ -32,7 +32,7 @@ public class PM80Scanner extends CordovaPlugin {
   public static class ScanResultReceiver extends BroadcastReceiver {
 		@Override
 		public void onReceive(Context context, Intent intent) {
-      // Toast.makeText(context, "Intent Detected.", Toast.LENGTH_LONG).show();
+      Toast.makeText(context, "Intent Detected.", Toast.LENGTH_LONG).show();
 			if (mScanner != null) {
 				mScanner.aDecodeGetResult(mDecodeResult.recycle());
         if (callbackContext != null) {
