@@ -16,7 +16,6 @@ import device.common.ScanConst;
 import device.sdk.ScanManager;
 
 import android.widget.Toast;
-// import android.util.Log;
 
 public class PM80Scanner extends CordovaPlugin {
 
